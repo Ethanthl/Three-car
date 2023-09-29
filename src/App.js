@@ -16,11 +16,11 @@ function CarShow() {
       <OrbitControls target={[0, 0.25, 2]} maxPolarAngle={1.45} />
       <PerspectiveCamera makeDefault fov={40} position={[4, 1,5]} />
       <color args={[0, 0, 0]} attach={"background"} />
-      <ambientLight color={0xfff5e1} />
+      <ambientLight color={0xfff5e1} intensity={5}/>
       <directionalLight
         position={[12, 15, -15]}
         color={0xfff5e1}
-        intensity={15}
+        intensity={10}
         castShadow
         shadow-mapSize-width={4096}
   shadow-mapSize-height={4096}

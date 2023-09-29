@@ -36,9 +36,9 @@ const Ground = () => {
         normalScale={[1,1]}
         resolution={1920}
         dithering={true}
-        blur={[1000, 400]} // Blur ground reflections (width, heigt), 0 skips blur
+        blur={0} // Blur ground reflections (width, heigt), 0 skips blur
         mixBlur={30} // How much blur mixes with surface roughness (default = 1)
-        mirror={0} // Mirror environment, 0 = texture colors, 1 = pick up env colors
+        mirror={1} // Mirror environment, 0 = texture colors, 1 = pick up env colors
         roughnessMap={roughness}
         roughness={1}
         envMapIntensity={1}
